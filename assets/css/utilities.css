@@ -361,7 +361,15 @@
 }
 
 .popular-adventures-section__slider {
-  @apply relative flex-1 flex flex-col gap-80 max-768:gap-40 min-w-0 max-1024:w-full;
+  @apply relative flex-1 flex flex-col min-w-0 max-1024:w-full;
+}
+
+.popular-adventures-section__panel {
+  @apply hidden;
+}
+
+.popular-adventures-section__panel--active {
+  @apply block;
 }
 
 .popular-adventures-section__tabs {
@@ -544,6 +552,9 @@
 
 .popular-adventures-scrollbar .swiper-scrollbar-drag {
   @apply cursor-grab bg-coral;
+}
+.popular-adventures-scrollbar {
+  @apply mt-80 max-768:mt-40
 }
 
 /* ===== SWIPER OVERRIDES ===== */
