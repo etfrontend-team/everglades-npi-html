@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/icon2.svg">
+    <link rel="apple-touch-icon" href="../assets/icons/icon2.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Everglades National Park Institute</title>
+    <link href="../dist/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/kka7qnd.css">
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="topbar">
+                <div class="container-fluid topbar__inner">
+                    <div class="topbar__notice swiper">
+                        <div class="swiper-wrapper">
+                            <p class="swiper-slide topbar__notice-slide">This is the first example of a sitewide notice.</p>
+                            <p class="swiper-slide topbar__notice-slide">This is the second example of a sitewide notice.</p>
+                            <p class="swiper-slide topbar__notice-slide">This is the third example of a sitewide notice.</p>
+                        </div>
+                    </div>
+                    <div class="topbar__links">
+                        <a
+                            href="/specials"
+                            role="link"
+                            target="_self"
+                            aria-label="View specials"
+                            class="topbar__link"
+                        >Specials</a>
+                        <a
+                            href="/donate"
+                            role="link"
+                            target="_self"
+                            aria-label="Donate"
+                            class="topbar__link"
+                        >Donate</a>
+                        <a
+                            href="/shop"
+                            role="link"
+                            target="_self"
+                            aria-label="Shop"
+                            class="btn btn-primary topbar__shop"
+                        >Shop</a>
+                    </div>
+                    <div class="topbar__search">
+                        <button
+                            type="button"
+                            aria-label="Open search"
+                            aria-expanded="false"
+                            class="topbar__icon-btn"
+                            data-search-open
+                        >
+                            <img
+                                src="/assets/icons/icon-search.svg"
+                                width="20"
+                                height="20"
+                                alt="Search icon"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </button>
+                        <form
+                            role="search"
+                            aria-label="Site search"
+                            class="topbar__search-form"
+                            data-search-form
+                            hidden
+                        >
+                            <div class="topbar__search-row">
+                                <img
+                                    src="/assets/icons/icon-search.svg"
+                                    width="20"
+                                    height="20"
+                                    alt="Search icon"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                                <label for="topbar-search-input" class="visually-hidden">Search</label>
+                                <input
+                                    type="search"
+                                    id="topbar-search-input"
+                                    name="q"
+                                    placeholder="Search..."
+                                    autocomplete="off"
+                                    class="topbar__search-input"
+                                />
+                                <button
+                                    type="button"
+                                    aria-label="Close search"
+                                    class="topbar__search-close"
+                                    data-search-close
+                                >
+                                    <img
+                                        src="/assets/icons/icon-close.svg"
+                                        width="24"
+                                        height="24"
+                                        alt="Close icon"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </button>
+                            </div>
+                            <div class="topbar__search-rule"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid site-nav">
+                <a
+                    href="/"
+                    role="link"
+                    target="_self"
+                    aria-label="Biscayne National Park Institute home"
+                    class="site-nav__logo-link"
+                >
+                    <img
+                        src="/assets/images/logo.webp"
+                        width="280"
+                        height="96"
+                        alt="Biscayne National Park Institute logo"
+                        loading="lazy"
+                        decoding="async"
+                        class="site-nav__logo logo-light"
+                    />
+                    <img
+                        src="/assets/images/logo-dark.webp"
+                        width="280"
+                        height="96"
+                        alt="Biscayne National Park Institute logo"
+                        loading="lazy"
+                        decoding="async"
+                        class="site-nav__logo logo-dark"
+                    />
+                </a>
+
+                <nav class="site-nav__links">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item" data-nav-trigger="locations">
+                            <a
+                                href="/locations"
+                                role="link"
+                                target="_self"
+                                aria-label="Locations"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >Locations</a>
+                        </li>
+                        <li class="site-nav__item" data-nav-trigger="experiences">
+                            <a
+                                href="/experiences"
+                                role="link"
+                                target="_self"
+                                aria-label="Experiences"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >Experiences</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a
+                                href="/packages"
+                                role="link"
+                                target="_self"
+                                aria-label="Packages"
+                            >Packages</a>
+                        </li>
+                        <li class="site-nav__item" data-nav-trigger="groups">
+                            <a
+                                href="/groups"
+                                role="link"
+                                target="_self"
+                                aria-label="Groups"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >Groups</a>
+                        </li>
+                        <li class="site-nav__item" data-nav-trigger="plan-your-visit">
+                            <a
+                                href="/plan-your-visit"
+                                role="link"
+                                target="_self"
+                                aria-label="Plan Your Visit"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >Plan Your Visit</a>
+                        </li>
+                        <li class="site-nav__item" data-nav-trigger="about-us">
+                            <a
+                                href="/about-us"
+                                role="link"
+                                target="_self"
+                                aria-label="About Us"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >About Us</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a
+                                href="/contact"
+                                role="link"
+                                target="_self"
+                                aria-label="Contact"
+                            >Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a
+                    href="/check-availability"
+                    role="link"
+                    target="_self"
+                    aria-label="Check availability"
+                    class="btn btn-primary btn-md site-nav__cta"
+                >Check Availability</a>
+            </div>
+
+            <div
+                class="nav-dropdown"
+                data-nav-dropdown="locations"
+            >
+                <div class="nav-dropdown__panel">
+                    <div class="nav-dropdown__col nav-dropdown__col--links">
+                        <div class="title title-midnight nav-dropdown__heading"><h3>Locations</h3></div>
+                        <ul class="nav-dropdown__list">
+                            <li><a href="/locations/ernest-f-coe" role="link" target="_self" aria-label="Ernest F Coe Visitor Center (Homestead)">Ernest F Coe Visitor Center (Homestead)</a></li>
+                            <li><a href="/locations/guy-bradley" role="link" target="_self" aria-label="Guy Bradley Visitor Center (Flamingo)">Guy Bradley Visitor Center (Flamingo)</a></li>
+                            <li><a href="/locations/shark-valley" role="link" target="_self" aria-label="Shark Valley Visitor Center (Tamiami Trl)">Shark Valley Visitor Center (Tamiami Trl)</a></li>
+                            <li><a href="/locations/other-institutes" role="link" target="_self" aria-label="Experience Our Other Institutes">Experience Our Other Institutes</a></li>
+                            <li><a href="/locations/big-cypress" role="link" target="_self" aria-label="Big Cypress National Preserve">Big Cypress National Preserve</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown__col nav-dropdown__col--cards">
+                        <a href="#" class="title title-midnight nav-dropdown__heading"><h3>Explore All</h3></a>
+                        <div class="nav-dropdown__cards">
+                            <a href="/experiences/florida-bay-eco-adventure" role="link" target="_self" aria-label="Florida Bay Eco Adventure At Flamingo" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/locations_1.webp" width="220" height="247" alt="Florida Bay Eco Adventure At Flamingo" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption nav-dropdown__card-caption--spread">Florida Bay Eco Adventure At Flamingo
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="/experiences/cypress-dome-wet-walk" role="link" target="_self" aria-label="Cypress Dome Wet Walk" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/locations_2.webp" width="220" height="247" alt="Cypress Dome Wet Walk" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption nav-dropdown__card-caption--spread">Cypress Dome Wet Walk
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/experiences/nine-mile-pond-eco-paddle" role="link" target="_self" aria-label="Nine Mile Pond Eco-Paddle" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/locations_3.webp" width="220" height="247" alt="Nine Mile Pond Eco-Paddle" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption nav-dropdown__card-caption--spread">Nine Mile Pond Eco-Paddle
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="nav-dropdown"
+                data-nav-dropdown="experiences"
+            >
+                <div class="nav-dropdown__panel">
+                    <div class="nav-dropdown__col nav-dropdown__col--links">
+                        <div class="nav-dropdown__tabs-row">
+                            <div class="nav-dropdown__tabs">
+                                <button type="button" class="nav-dropdown__tab is-active" data-exp-tab="activity">By Activity</button>
+                                <button type="button" class="nav-dropdown__tab" data-exp-tab="traveler">By Traveler</button>
+                                <a href="#" type="button" class="nav-dropdown__tab" disabled aria-disabled="true">Specialty Trips</a>
+                                <a href="#" type="button" class="nav-dropdown__tab" disabled aria-disabled="true">All</a>
+                            </div>
+                            <div class="nav-dropdown__tab-panel" data-exp-panel="activity">
+                                <a href="#" class="title title-midnight nav-dropdown__heading"><h3>Top Activities</h3></a>
+                                <ul class="nav-dropdown__list">
+                                    <li><a href="/experiences/van-program" role="link" target="_self" aria-label="Van Program">Van Program</a></li>
+                                    <li><a href="/experiences/paddling" role="link" target="_self" aria-label="Paddling">Paddling</a></li>
+                                    <li><a href="/experiences/hiking" role="link" target="_self" aria-label="Hiking">Hiking</a></li>
+                                    <li><a href="/experiences/boat-program" role="link" target="_self" aria-label="Boat Program">Boat Program</a></li>
+                                    <li><a href="/experiences/events-workshops" role="link" target="_self" aria-label="Events and Workshops">Events &amp; Workshops</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-dropdown__tab-panel" data-exp-panel="traveler" hidden>
+                                <a href="#" class="title title-midnight nav-dropdown__heading"><h3>Top Activities</h3></a>
+                                <ul class="nav-dropdown__list">
+                                    <li><a href="/experiences/all" role="link" target="_self" aria-label="All">All</a></li>
+                                    <li><a href="/experiences/group-trips" role="link" target="_self" aria-label="Group Trips">Group Trips</a></li>
+                                    <li><a href="/experiences/team-building" role="link" target="_self" aria-label="Team Building">Team Building</a></li>
+                                    <li><a href="/experiences/education" role="link" target="_self" aria-label="Education">Education</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown__col nav-dropdown__col--cards">
+                        <div class="nav-dropdown__cards" data-exp-cards="activity">
+                            <a href="/experiences/van-program" role="link" target="_self" aria-label="Van Program" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/exp_activity_1.webp" width="220" height="313" alt="Van Program" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Van Program
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/experiences/paddling" role="link" target="_self" aria-label="Paddling" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/exp_activity_2.webp" width="220" height="313" alt="Paddling" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Paddling
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/experiences/hiking" role="link" target="_self" aria-label="Hiking" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/exp_activity_3.webp" width="220" height="313" alt="Hiking" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Hiking
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="nav-dropdown__cards" data-exp-cards="traveler" hidden>
+                            <a href="/experiences/group-trips" role="link" target="_self" aria-label="Group Trips" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/exp_traveler_1.webp" width="220" height="313" alt="Group Trips" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Group Trips
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/experiences/team-building" role="link" target="_self" aria-label="Team Building" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/exp_traveler_2.webp" width="220" height="313" alt="Team Building" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Team Building
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/experiences/education" role="link" target="_self" aria-label="Education program" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/exp_traveler_3.webp" width="220" height="313" alt="Education program" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Education
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="nav-dropdown"
+                data-nav-dropdown="groups"
+            >
+                <div class="nav-dropdown__panel">
+                    <div class="nav-dropdown__col nav-dropdown__col--links">
+                        <div class="title title-midnight nav-dropdown__heading"><h3>Groups</h3></div>
+                        <ul class="nav-dropdown__list">
+                            <li><a href="/groups/nonprofit-educational" role="link" target="_self" aria-label="Non Profit and Educational Groups">Non Profit/Educational Groups</a></li>
+                            <li><a href="/groups/work-team-building" role="link" target="_self" aria-label="Work Groups and Team Building">Work Groups/Team Building</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown__col nav-dropdown__col--cards">
+                        <a href="#" class="title title-midnight nav-dropdown__heading"><h3>Explore All</h3></a>
+                        <div class="nav-dropdown__cards">
+                            <a href="/groups/nonprofit-educational" role="link" target="_self" aria-label="Non Profit and Educational Groups" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/groups_1.webp" width="220" height="247" alt="Non Profit and Educational Groups" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption nav-dropdown__card-caption--spread">Non Profit/Educational Groups
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/groups/work-team-building" role="link" target="_self" aria-label="Work Groups and Team Building" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/groups_2.webp" width="220" height="247" alt="Work Groups and Team Building" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption nav-dropdown__card-caption--spread">Work Groups/Team Building
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/groups" role="link" target="_self" aria-label="More group options" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/groups_3.webp" width="220" height="247" alt="More group options" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption nav-dropdown__card-caption--spread">Lorem ipsum dolor sit amet consectetur
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="nav-dropdown"
+                data-nav-dropdown="plan-your-visit"
+            >
+                <div class="nav-dropdown__panel">
+                    <div class="nav-dropdown__col nav-dropdown__col--links">
+                        <div class="title title-midnight nav-dropdown__heading"><h3>Plan Your Visit</h3></div>
+                        <ul class="nav-dropdown__list">
+                            <li><a href="/plan-your-visit/faq" role="link" target="_self" aria-label="FAQ">FAQ</a></li>
+                            <li><a href="/plan-your-visit/transportation" role="link" target="_self" aria-label="Transportation">Transportation</a></li>
+                            <li><a href="/plan-your-visit/cancellation-policy" role="link" target="_self" aria-label="Cancellation Policy">Cancellation Policy</a></li>
+                            <li><a href="/plan-your-visit/weather-policy" role="link" target="_self" aria-label="Weather Policy">Weather Policy</a></li>
+                            <li><a href="/plan-your-visit/communication-terms" role="link" target="_self" aria-label="Communication Terms of Services">Communication Terms of Services</a></li>
+                            <li><a href="/plan-your-visit/accessibility" role="link" target="_self" aria-label="Accessibility">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown__col nav-dropdown__col--cards">
+                        <a href="#" class="title title-midnight nav-dropdown__heading"><h3>Explore All</h3></a>
+                        <div class="nav-dropdown__cards">
+                            <a href="/plan-your-visit/faq" role="link" target="_self" aria-label="FAQ" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/plan_1.webp" width="220" height="269" alt="FAQ" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">FAQ
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/plan-your-visit/transportation" role="link" target="_self" aria-label="Transportation" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/plan_2.webp" width="220" height="269" alt="Transportation" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Transportation
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/plan-your-visit/cancellation-policy" role="link" target="_self" aria-label="Cancellation Policy" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/plan_3.webp" width="220" height="269" alt="Cancellation Policy" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Cancellation Policy
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="nav-dropdown"
+                data-nav-dropdown="about-us"
+            >
+                <div class="nav-dropdown__panel">
+                    <div class="nav-dropdown__col nav-dropdown__col--links">
+                        <div class="title title-midnight nav-dropdown__heading"><h3>About Us</h3></div>
+                        <ul class="nav-dropdown__list">
+                            <li><a href="/about-us/fnpa" role="link" target="_self" aria-label="FNPA Experience Florida National Parks">FNPA Experience Florida National Parks</a></li>
+                            <li><a href="/about-us/why-choose-us" role="link" target="_self" aria-label="Why Choose Us">Why Choose Us</a></li>
+                            <li><a href="/about-us/our-team" role="link" target="_self" aria-label="Our Team">Our Team</a></li>
+                            <li><a href="/about-us/careers" role="link" target="_self" aria-label="Careers">Careers</a></li>
+                            <li><a href="/about-us/news-blogs" role="link" target="_self" aria-label="News and Blogs">News/Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown__col nav-dropdown__col--cards">
+                        <a href="#" class="title title-midnight nav-dropdown__heading"><h3>Explore All</h3></a>
+                        <div class="nav-dropdown__cards">
+                            <a href="/about-us/our-team" role="link" target="_self" aria-label="Our Team" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/about_1.webp" width="220" height="269" alt="Our Team" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Our Team
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/about-us/careers" role="link" target="_self" aria-label="Careers" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/about_2.webp" width="220" height="269" alt="Careers" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Careers
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                            <a href="/about-us/news-blogs" role="link" target="_self" aria-label="News and Blogs" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/about_3.webp" width="220" height="269" alt="News and Blogs" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">News/Blogs
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-header">
+                <button
+                    type="button"
+                    aria-label="Toggle menu"
+                    aria-expanded="false"
+                    class="mobile-header__menu-btn"
+                    data-mobile-menu-toggle
+                >
+                    <img
+                        src="/assets/icons/icon-menu.svg"
+                        width="18"
+                        height="19"
+                        alt="Menu icon"
+                        loading="lazy"
+                        decoding="async"
+                        class="mobile-header__menu-icon logo-light"
+                    />
+                    <img
+                        src="/assets/icons/icon-menu-dark.svg"
+                        width="18"
+                        height="19"
+                        alt="Menu icon"
+                        loading="lazy"
+                        decoding="async"
+                        class="mobile-header__menu-icon logo-dark"
+                    />
+                </button>
+                <a
+                    href="/"
+                    role="link"
+                    target="_self"
+                    aria-label="Biscayne National Park Institute home"
+                    class="mobile-header__logo-link"
+                >
+                    <img
+                        src="/assets/images/logo.webp"
+                        width="201"
+                        height="80"
+                        alt="Biscayne National Park Institute logo"
+                        loading="lazy"
+                        decoding="async"
+                        class="mobile-header__logo logo-light"
+                    />
+                    <img
+                        src="/assets/images/logo-dark.webp"
+                        width="201"
+                        height="80"
+                        alt="Biscayne National Park Institute logo"
+                        loading="lazy"
+                        decoding="async"
+                        class="mobile-header__logo logo-dark"
+                    />
+                </a>
+                <a
+                    href="tel:+10000000000"
+                    role="link"
+                    target="_self"
+                    aria-label="Call us"
+                    class="mobile-header__phone-btn"
+                >
+                    <img
+                        src="/assets/icons/icon-phone-white.svg"
+                        width="20"
+                        height="20"
+                        alt="Phone icon"
+                        loading="lazy"
+                        decoding="async"
+                        class="mobile-header__phone-icon logo-light"
+                    />
+                    <img
+                        src="/assets/icons/icon-phone.svg"
+                        width="20"
+                        height="20"
+                        alt="Phone icon"
+                        loading="lazy"
+                        decoding="async"
+                        class="mobile-header__phone-icon logo-dark"
+                    />
+                </a>
+            </div>
+
+            <nav class="mobile-nav" data-mobile-nav hidden aria-label="Mobile">
+                <div class="mobile-nav__acc" data-acc>
+                    <button type="button" class="mobile-nav__row" data-acc-trigger aria-expanded="false">
+                        Locations
+                        <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                    </button>
+                    <div class="mobile-nav__panel" data-acc-panel hidden>
+                        <a href="/locations/homestead" role="link" target="_self" aria-label="Homestead: Dante Fascell Visitor Center">Homestead: Dante Fascell Visitor Center</a>
+                        <a href="/locations/coconut-grove" role="link" target="_self" aria-label="Coconut Grove: Dinner Key Marina">Coconut Grove: Dinner Key Marina</a>
+                        <a href="/locations/deering-estate" role="link" target="_self" aria-label="Deering Estate">Deering Estate</a>
+                        <a href="/locations/big-cypress" role="link" target="_self" aria-label="Big Cypress National Preserve Institute">Big Cypress National Preserve Institute</a>
+                        <a href="/locations/other-institutes" role="link" target="_self" aria-label="Experience Our Other Institutes">Experience Our Other Institutes</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav__acc" data-acc>
+                    <button type="button" class="mobile-nav__row" data-acc-trigger aria-expanded="false">
+                        Experiences
+                        <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                    </button>
+                    <div class="mobile-nav__panel mobile-nav__panel--nested" data-acc-panel hidden>
+                        <div class="mobile-nav__acc mobile-nav__acc--sub" data-acc>
+                            <button type="button" class="mobile-nav__subrow" data-acc-trigger aria-expanded="false">
+                                By Activity
+                                <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                            </button>
+                            <div class="mobile-nav__subpanel" data-acc-panel hidden>
+                                <a href="/experiences/snorkeling" role="link" target="_self" aria-label="Snorkeling">Snorkeling</a>
+                                <a href="/experiences/island-visit" role="link" target="_self" aria-label="Island Visit">Island Visit</a>
+                                <a href="/experiences/paddling" role="link" target="_self" aria-label="Paddling">Paddling</a>
+                                <a href="/experiences/stiltsville" role="link" target="_self" aria-label="Stiltsville">Stiltsville</a>
+                                <a href="/experiences/boat-cruises" role="link" target="_self" aria-label="Boat Cruises">Boat Cruises</a>
+                                <a href="/experiences/sailing" role="link" target="_self" aria-label="Sailing">Sailing</a>
+                                <a href="/experiences/events-workshops" role="link" target="_self" aria-label="Events and Workshops">Events &amp; Workshops</a>
+                            </div>
+                        </div>
+                        <div class="mobile-nav__acc mobile-nav__acc--sub" data-acc>
+                            <button type="button" class="mobile-nav__subrow" data-acc-trigger aria-expanded="false">
+                                By Traveler
+                                <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                            </button>
+                            <div class="mobile-nav__subpanel" data-acc-panel hidden>
+                                <a href="/experiences/all" role="link" target="_self" aria-label="All">All</a>
+                                <a href="/experiences/group-trips" role="link" target="_self" aria-label="Group Trips">Group Trips</a>
+                                <a href="/experiences/team-building" role="link" target="_self" aria-label="Team Building">Team Building</a>
+                                <a href="/experiences/education" role="link" target="_self" aria-label="Education">Education</a>
+                            </div>
+                        </div>
+                        <a class="mobile-nav__subrow mobile-nav__subrow--flat" aria-disabled="true">Specialty Trips</a>
+                        <a class="mobile-nav__subrow mobile-nav__subrow--flat" aria-disabled="true">All</a>
+                    </div>
+                </div>
+
+                <a href="/packages" role="link" target="_self" aria-label="Packages" class="mobile-nav__row mobile-nav__row--flat">Packages</a>
+
+                <div class="mobile-nav__acc" data-acc>
+                    <button type="button" class="mobile-nav__row" data-acc-trigger aria-expanded="false">
+                        Groups
+                        <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                    </button>
+                    <div class="mobile-nav__panel" data-acc-panel hidden>
+                        <a href="/groups/nonprofit-educational" role="link" target="_self" aria-label="Non Profit and Educational Groups">Non Profit/Educational Groups</a>
+                        <a href="/groups/work-team-building" role="link" target="_self" aria-label="Work Groups and Team Building">Work Groups/Team Building</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav__acc" data-acc>
+                    <button type="button" class="mobile-nav__row" data-acc-trigger aria-expanded="false">
+                        Plan Your Visit
+                        <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                    </button>
+                    <div class="mobile-nav__panel" data-acc-panel hidden>
+                        <a href="/plan-your-visit/faq" role="link" target="_self" aria-label="FAQ">FAQ</a>
+                        <a href="/plan-your-visit/transportation" role="link" target="_self" aria-label="Transportation">Transportation</a>
+                        <a href="/plan-your-visit/cancellation-policy" role="link" target="_self" aria-label="Cancellation Policy">Cancellation Policy</a>
+                        <a href="/plan-your-visit/weather-policy" role="link" target="_self" aria-label="Weather Policy">Weather Policy</a>
+                        <a href="/plan-your-visit/communication-terms" role="link" target="_self" aria-label="Communication Terms of Services">Communication Terms of Services</a>
+                        <a href="/plan-your-visit/accessibility" role="link" target="_self" aria-label="Accessibility">Accessibility</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav__acc" data-acc>
+                    <button type="button" class="mobile-nav__row" data-acc-trigger aria-expanded="false">
+                        About Us
+                        <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                    </button>
+                    <div class="mobile-nav__panel" data-acc-panel hidden>
+                        <a href="/about-us/fnpa" role="link" target="_self" aria-label="FNPA Experience Florida National Parks">FNPA Experience Florida National Parks</a>
+                        <a href="/about-us/why-choose-us" role="link" target="_self" aria-label="Why Choose Us">Why Choose Us</a>
+                        <a href="/about-us/our-team" role="link" target="_self" aria-label="Our Team">Our Team</a>
+                        <a href="/about-us/careers" role="link" target="_self" aria-label="Careers">Careers</a>
+                        <a href="/about-us/news-blogs" role="link" target="_self" aria-label="News and Blogs">News/Blogs</a>
+                    </div>
+                </div>
+
+                <a href="/contact" role="link" target="_self" aria-label="Contact" class="mobile-nav__row mobile-nav__row--flat">Contact</a>
+
+                <div class="mobile-nav__actions">
+                    <a href="/specials" role="link" target="_self" aria-label="View specials" class="mobile-nav__action">Specials</a>
+                    <a href="/donate" role="link" target="_self" aria-label="Donate" class="mobile-nav__action">Donate</a>
+                    <a href="/shop" role="link" target="_self" aria-label="Shop" class="mobile-nav__action mobile-nav__action--shop">Shop</a>
+                    <a href="/check-availability" role="link" target="_self" aria-label="Check availability" class="mobile-nav__action mobile-nav__action--cta">Check Availability</a>
+                </div>
+
+                <div class="mobile-nav__search">
+                    <form role="search" aria-label="Site search" class="mobile-nav__search-form">
+                        <label for="mobile-search-input" class="visually-hidden">Search</label>
+                        <img src="/assets/icons/icon-search.svg" width="20" height="20" alt="Search icon" loading="lazy" decoding="async" />
+                        <input type="search" id="mobile-search-input" name="q" placeholder="Search..." autocomplete="off" class="mobile-nav__search-input" />
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero pt-211">
+            <video
+                class="hero__video"
+                src="/assets/images/banner-video.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                aria-hidden="true"
+            ></video>
+
+            <div class="container-fluid-lg hero__content">
+                <div class="hero__icons">
+                    <img
+                        src="/assets/icons/icon3.svg"
+                        width="285"
+                        height="20"
+                        alt="Decorative fish icon"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </div>
+
+                <div class="title title-white hero__title">
+                    <h1>Everglades National Park Institute</h1>
+                </div>
+
+                <div class="title title-white hero__subtitle">
+                    <h2 class="h3">Your next great adventure begins here. Embark on a backcountry boat tour, paddle through winding mangrove trails, and experience the Everglades with expert Institute Naturalists.</h2>
+                </div>
+
+                <a
+                    href="/check-availability"
+                    role="link"
+                    target="_self"
+                    aria-label="Check availability"
+                    class="btn btn-primary"
+                >Check Availability</a>
+            </div>
+        </section>
+
+        <section class="simple-content-wrapper relative bg-white pt-60 pb-60 max-1199:pt-40 max-1199:pb-40 max-1024:pb-130">
+            <div class="container-fluid-lg">
+                <div class="simple-content-wrapper__inner">
+                    <div class="simple-content-wrapper__title-col">
+                        <div class="title title-midnight simple-content-wrapper__title">
+                            <h2>Who We Are</h2>
+                        </div>
+                        <div class="simple-content-wrapper__deco-icons max-1024:hidden" aria-hidden="true">
+                            <img
+                                src="/assets/icons/icon4.svg"
+                                width="363"
+                                height="76"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="simple-content-wrapper__content">
+                        <div class="content content-midnight">
+                            <p>Lorem ipsum dolor sit amet consectetur. Leo sodales vitae mauris phasellus cras congue tellus. Egestas leo id turpis sed ut feugiat. Vitae egestas adipiscing amet tristique enim mauris egestas ac.
+                                Massa sapien eu cursus aliquet. Sodales scelerisque sed morbi accumsan amet. Congue nisl nunc arcu amet donec id tortor. Non platea vel posuere sem vel. Non semper eget.</p>
+                        </div>
+                        <div class="simple-content-wrapper__actions">
+                            <a
+                                href="/about-us"
+                                role="link"
+                                target="_self"
+                                aria-label="Learn about Biscayne National Park Institute"
+                                class="btn btn-accent-aqua"
+                            >Learn About Biscayne NPI</a>
+                        </div>
+                    </div>
+                    <div class="simple-content-wrapper__deco-icons hidden max-1024:block" aria-hidden="true">
+                        <img
+                            src="/assets/icons/icon4.svg"
+                            width="363"
+                            height="76"
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section class="popular-adventures-section pt-150 pb-60 max-1199:pt-100 max-1199:pb-100 max-768:pt-50 max-768:pb-160">
+            <img
+                src="/assets/images/popular-adventures/section-bg.webp"
+                width="4096"
+                height="2704"
+                alt="Underwater scene at Biscayne National Park"
+                loading="lazy"
+                decoding="async"
+                class="popular-adventures-section__bg"
+            />
+            <div class="popular-adventures-section__overlay" aria-hidden="true"></div>
+
+            <div class="container-fluid-lg">
+                <div class="popular-adventures-section__inner">
+
+                    <!-- Left: Description -->
+                    <div class="popular-adventures-section__header">
+                        <div class="popular-adventures-section__title-wrap">
+                            <div class="title title-limestone">
+                                <h2>Most Popular Adventures</h2>
+                            </div>
+                            <img
+                                src="/assets/icons/icon2.svg"
+                                width="45"
+                                height="35"
+                                alt="Decorative fish icon"
+                                loading="lazy"
+                                decoding="async"
+                                class="popular-adventures-section__deco-icon"
+                            />
+                        </div>
+                        <div class="content content-white">
+                            <p>Lorem ipsum dolor sit amet consectetur. Sapien velit vel risus praesent. Euismod ultricies quis integer sit pulvinar sed. Vulputate est turpis blandit eget blandit. Blandit platea scelerisque risus cras morbi.</p>
+                        </div>
+                        <a
+                            href="/experiences"
+                            role="link"
+                            target="_self"
+                            aria-label="Explore all experiences"
+                            class="btn btn-primary"
+                        >Explore All Experiences</a>
+                    </div>
+
+                    <!-- Right: Swiper -->
+                    <div class="popular-adventures-section__slider">
+                    <div>
+                        <!-- Category Tabs (desktop) -->
+                        <div class="popular-adventures-section__tabs">
+                            <span class="popular-adventures-section__tabs-label">Explore by Category:</span>
+                            <button
+                                type="button"
+                                aria-label="Explore experiences"
+                                class="popular-adventures-section__tab popular-adventures-section__tab--active"
+                                data-tab="experiences"
+                            >Experiences</button>
+                            <button
+                                type="button"
+                                aria-label="Explore workshops"
+                                class="popular-adventures-section__tab"
+                                data-tab="workshops"
+                            >Workshops</button>
+                            <button
+                                type="button"
+                                aria-label="Explore packages"
+                                class="popular-adventures-section__tab"
+                                data-tab="packages"
+                            >Packages</button>
+                        </div>
+
+                        <!-- Category Dropdown (mobile) -->
+                        <div class="popular-adventures-section__category">
+                            <span class="popular-adventures-section__category-label">Explore by Category:</span>
+                            <div class="popular-adventures-section__dropdown" id="adventures-dropdown">
+                                <button
+                                    type="button"
+                                    aria-label="Select adventure category"
+                                    aria-expanded="false"
+                                    aria-haspopup="listbox"
+                                    class="popular-adventures-section__dropdown-btn"
+                                >
+                                    <span class="popular-adventures-section__dropdown-value">Experiences</span>
+                                    <img
+                                        src="/assets/icons/icon-chevron-down.svg"
+                                        width="12"
+                                        height="20"
+                                        alt=""
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="popular-adventures-section__dropdown-chevron"
+                                    />
+                                </button>
+                                <ul
+                                    class="popular-adventures-section__dropdown-menu"
+                                    role="listbox"
+                                    aria-label="Adventure categories"
+                                >
+                                    <li role="option" aria-selected="true" class="popular-adventures-section__dropdown-item popular-adventures-section__dropdown-item--active" data-tab="experiences">Experiences</li>
+                                    <li role="option" aria-selected="false" class="popular-adventures-section__dropdown-item" data-tab="workshops">Workshops</li>
+                                    <li role="option" aria-selected="false" class="popular-adventures-section__dropdown-item" data-tab="packages">Packages</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="swiper popular-adventures-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Cards rendered by popular-adventures.js -->
+                            </div><!-- /.swiper-wrapper -->
+                        </div><!-- /.swiper -->
+</div>
+                        <!-- Scrollbar -->
+                        <div class="swiper-scrollbar popular-adventures-scrollbar" aria-hidden="true"></div>
+                    </div><!-- /.popular-adventures-section__slider -->
+
+                </div><!-- /.popular-adventures-section__inner -->
+            </div><!-- /.container-fluid-lg -->
+
+            <!-- Bottom decorative sea creature icons -->
+            <div class="popular-adventures-section__deco-icons" aria-hidden="true">
+                <img
+                    src="/assets/icons/icon-1.svg"
+                    width="112"
+                    height="81"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                />
+            </div>
+        </section>
+
+        <section class="search-bar-section bg-coral pt-40 pb-40">
+            <form
+                class="search-bar-section__inner"
+                action="/experiences"
+                method="get"
+                role="search"
+                aria-label="Adventure search"
+            >
+                <div class="search-bar" data-dropdown-group>
+                    <div class="search-bar__field" data-dropdown>
+                        <button
+                            type="button"
+                            aria-label="Select destination"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            aria-controls="search-destination-panel"
+                            class="search-bar__trigger"
+                            data-dropdown-trigger
+                        >
+                            <span class="search-bar__copy">
+                                <span class="title title-midnight search-bar__title"><h3>Destination</h3></span>
+                                <span class="search-bar__hint" data-dropdown-hint>Where would you like to go?</span>
+                            </span>
+                            <img
+                                src="/assets/icons/icon-chevron-down.svg"
+                                width="12"
+                                height="20"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                                class="search-bar__chevron"
+                            />
+                        </button>
+                        <input type="hidden" name="destination" data-dropdown-input />
+                        <ul
+                            id="search-destination-panel"
+                            class="search-bar__panel search-bar__panel--destination"
+                            role="listbox"
+                            aria-label="Destination"
+                            data-dropdown-panel
+                            hidden
+                        >
+                            <li class="search-bar__option" role="option" data-value="homestead">Homestead: Dante Fascell Visitor Center</li>
+                            <li class="search-bar__option" role="option" data-value="coconut-grove">Coconut Grove: Dinner Key Marina</li>
+                            <li class="search-bar__option" role="option" data-value="deering-estate">Deering Estate</li>
+                            <li class="search-bar__option" role="option" data-value="big-cypress">Big Cypress National Preserve Institute</li>
+                            <li class="search-bar__option" role="option" data-value="other-institutes">Experience Our Other Institutes</li>
+                        </ul>
+                    </div>
+
+                    <div class="search-bar__field" data-dropdown>
+                        <button
+                            type="button"
+                            aria-label="Select activity"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            aria-controls="search-activity-panel"
+                            class="search-bar__trigger"
+                            data-dropdown-trigger
+                        >
+                            <span class="search-bar__copy">
+                                <span class="title title-midnight search-bar__title"><h3>Activity</h3></span>
+                                <span class="search-bar__hint" data-dropdown-hint>Where would you like to do?</span>
+                            </span>
+                            <img
+                                src="/assets/icons/icon-chevron-down.svg"
+                                width="12"
+                                height="20"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                                class="search-bar__chevron"
+                            />
+                        </button>
+                        <input type="hidden" name="activity" data-dropdown-input />
+                        <ul
+                            id="search-activity-panel"
+                            class="search-bar__panel search-bar__panel--activity"
+                            role="group"
+                            aria-label="Activity"
+                            data-dropdown-panel
+                            data-multi
+                            hidden
+                        >
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Snorkeling" data-value="snorkeling" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Snorkeling</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Island Visit" data-value="island-visit" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Island Visit</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Paddling" data-value="paddling" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Paddling</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Stiltsville" data-value="stiltsville" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Stiltsville</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Boat Cruises" data-value="boat-cruises" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Boat Cruises</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Sailing" data-value="sailing" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Sailing</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Events and Workshops" data-value="events-workshops" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Events &amp; Workshops</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="search-bar__field" data-dropdown>
+                        <button
+                            type="button"
+                            aria-label="Select trip length"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            aria-controls="search-trip-length-panel"
+                            class="search-bar__trigger"
+                            data-dropdown-trigger
+                        >
+                            <span class="search-bar__copy">
+                                <span class="title title-midnight search-bar__title"><h3>Trip Length</h3></span>
+                                <span class="search-bar__hint" data-dropdown-hint>How long would you like to go?</span>
+                            </span>
+                            <img
+                                src="/assets/icons/icon-chevron-down.svg"
+                                width="12"
+                                height="20"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                                class="search-bar__chevron"
+                            />
+                        </button>
+                        <input type="hidden" name="trip_length" data-dropdown-input />
+                        <ul
+                            id="search-trip-length-panel"
+                            class="search-bar__panel search-bar__panel--trip-length"
+                            role="listbox"
+                            aria-label="Trip length"
+                            data-dropdown-panel
+                            hidden
+                        >
+                            <li class="search-bar__option" role="option" data-value="half-day">Half Day (up to 4 hrs)</li>
+                            <li class="search-bar__option" role="option" data-value="full-day">Full Day (4-8 hrs)</li>
+                            <li class="search-bar__option" role="option" data-value="multi-day">Multi-Day</li>
+                        </ul>
+                    </div>
+
+                    <div class="search-bar__field" data-dropdown>
+                        <button
+                            type="button"
+                            aria-label="Select departure month"
+                            aria-haspopup="dialog"
+                            aria-expanded="false"
+                            aria-controls="search-departure-month-panel"
+                            class="search-bar__trigger"
+                            data-dropdown-trigger
+                        >
+                            <span class="search-bar__copy">
+                                <span class="title title-midnight search-bar__title"><h3>Departure Month</h3></span>
+                                <span class="search-bar__hint" data-dropdown-hint>When are you looking to depart?</span>
+                            </span>
+                            <img
+                                src="/assets/icons/icon-chevron-down.svg"
+                                width="12"
+                                height="20"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                                class="search-bar__chevron"
+                            />
+                        </button>
+                        <div
+                            id="search-departure-month-panel"
+                            class="search-bar__panel search-bar__panel--departure-month"
+                            data-dropdown-panel
+                            hidden
+                        >
+                            <label for="search-departure-month-input" class="search-bar__date-row">
+                                <input
+                                    type="month"
+                                    id="search-departure-month-input"
+                                    name="departure_month"
+                                    class="search-bar__date-input"
+                                    data-date-input
+                                />
+                                <img
+                                    src="/assets/icons/icon-calendar-outline.svg"
+                                    width="20"
+                                    height="20"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </label>
+                        </div>
+                    </div>
+
+                    <button
+                        type="submit"
+                        aria-label="Search adventures"
+                        class="search-bar__submit"
+                    >
+                        <span class="search-bar__submit-label">Search</span>
+                        <span class="search-bar__submit-icon">
+                            <img
+                                src="/assets/icons/icon-search.svg"
+                                width="18"
+                                height="18"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="three-card-wrapper bg-white pt-60 pb-60 1199:pt-100 1199:pb-100 overflow-hidden">
+            <img
+                src="/assets/icons/icon-locations-deco-top.svg"
+                width="962"
+                height="160"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                class="three-card-wrapper__deco-top"
+            />
+            <img
+                src="/assets/icons/icon-locations-deco-bottom.svg"
+                width="962"
+                height="160"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                class="three-card-wrapper__deco-bottom"
+            />
+            <div class="container-fluid-lg">
+                <div class="three-card-wrapper__wrap">
+                    <div class="three-card-wrapper__header">
+                        <div class="three-card-wrapper__title-group">
+                            <p class="three-card-wrapper__eyebrow">Everglades Locations</p>
+                            <div class="title title-midnight">
+                                <h2>Our Locations</h2>
+                            </div>
+                        </div>
+                        <div class="content content-midnight">
+                            <p>Explore the breathtaking wilderness of the Everglades from multiple access points — each offering its own unique gateway into America's largest subtropical wilderness.</p>
+                        </div>
+                    </div>
+
+                    <div class="three-card-wrapper__cards swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide three-card-wrapper__slide">
+                                <article class="adventure-card three-card-wrapper__card">
+                                    <img
+                                        src="/assets/images/locations/homestead.webp"
+                                        width="4097"
+                                        height="2731"
+                                        alt="Ernest F. Coe Visitor Center in Homestead"
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="adventure-card__bg"
+                                    />
+                                    <div class="adventure-card__overlay" aria-hidden="true"></div>
+                                    <div class="adventure-card__inner">
+                                        <span class="adventure-card__badge adventure-card__badge--teal">Homestead</span>
+                                        <div class="three-card-wrapper__card-body">
+                                            <div class="title title-white adventure-card__title">
+                                                <h3>Ernest F. Coe Visitor Center</h3>
+                                            </div>
+                                            <a
+                                                href="/locations/homestead"
+                                                role="link"
+                                                target="_self"
+                                                aria-label="View programs at Ernest F. Coe Visitor Center"
+                                                class="btn btn-primary"
+                                            >View Programs</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide three-card-wrapper__slide">
+                                <article class="adventure-card three-card-wrapper__card">
+                                    <img
+                                        src="/assets/images/locations/flamingo.webp"
+                                        width="4097"
+                                        height="2726"
+                                        alt="Guy Bradley Visitor Center at Flamingo"
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="adventure-card__bg"
+                                    />
+                                    <div class="adventure-card__overlay" aria-hidden="true"></div>
+                                    <div class="adventure-card__inner">
+                                        <span class="adventure-card__badge adventure-card__badge--flamingo">Flamingo</span>
+                                        <div class="three-card-wrapper__card-body">
+                                            <div class="title title-white adventure-card__title">
+                                                <h3>Guy Bradley Visitor Center</h3>
+                                            </div>
+                                            <a
+                                                href="/locations/flamingo"
+                                                role="link"
+                                                target="_self"
+                                                aria-label="View programs at Guy Bradley Visitor Center"
+                                                class="btn btn-primary"
+                                            >View Programs</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide three-card-wrapper__slide">
+                                <article class="adventure-card three-card-wrapper__card">
+                                    <img
+                                        src="/assets/images/locations/shark-valley.webp"
+                                        width="4097"
+                                        height="2714"
+                                        alt="Shark Valley Visitor Center tram road"
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="adventure-card__bg"
+                                    />
+                                    <div class="adventure-card__overlay" aria-hidden="true"></div>
+                                    <div class="adventure-card__inner">
+                                        <span class="adventure-card__badge adventure-card__badge--navy">Shark Valley</span>
+                                        <div class="three-card-wrapper__card-body">
+                                            <div class="title title-white adventure-card__title">
+                                                <h3>Shark Valley Visitor Center</h3>
+                                            </div>
+                                            <a
+                                                href="/locations/shark-valley"
+                                                role="link"
+                                                target="_self"
+                                                aria-label="View programs at Shark Valley Visitor Center"
+                                                class="btn btn-primary"
+                                            >View Programs</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-scrollbar three-card-wrapper__scrollbar" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="footer-instagram bg-limestone-light pt-50 pb-50 max-1199:pt-40 max-1199:pb-40">
+                <div class="container-fluid footer-instagram__inner">
+                    <p class="footer-instagram__handle">@evergladesnationalparkinstitute</p>
+                    <a
+                        href="https://instagram.com/evergladesnationalparkinstitute"
+                        role="link"
+                        target="_blank"
+                        aria-label="Follow us on Instagram"
+                        class="btn btn-accent-aqua"
+                    >Follow Us</a>
+                </div>
+            </section>
+
+            <section class="footer-newsletter bg-coral pt-20 pb-20 max-1199:pt-40 max-1199:pb-40">
+                <div class="container-fluid footer-newsletter__inner">
+                    <div class="footer-newsletter__copy">
+                        <p class="footer-newsletter__title">Join Our Newsletter</p>
+                        <p class="footer-newsletter__desc">Lorem ipsum dolor sit amet consectetur. Felis sagittis.</p>
+                    </div>
+                    <form class="footer-newsletter__form" aria-label="Newsletter signup">
+                        <label for="newsletter-email" class="visually-hidden">Email</label>
+                        <input
+                            type="email"
+                            id="newsletter-email"
+                            name="email"
+                            placeholder="Email"
+                            autocomplete="email"
+                            class="footer-newsletter__input"
+                            required
+                        />
+                        <button
+                            type="submit"
+                            aria-label="Subscribe to newsletter"
+                            class="footer-newsletter__submit"
+                        >Subscribe</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="footer-nav">
+                <img
+                    src="/assets/images/footer/footer-bg.webp"
+                    width="1920"
+                    height="1280"
+                    alt="Boca Chita lighthouse at Biscayne National Park"
+                    loading="lazy"
+                    decoding="async"
+                    class="footer-nav__bg"
+                />
+                <div class="footer-nav__overlay"></div>
+
+                <div class="container-fluid footer-nav__inner">
+                    <div class="footer-nav__col">
+                        <div class="title title-limestone footer-nav__heading"><h3>Get Involved</h3></div>
+                        <ul class="footer-nav__list">
+                            <li><a href="/get-involved/our-partners" role="link" target="_self" aria-label="Our Partners">Our Partners</a></li>
+                            <li><a href="/get-involved/support" role="link" target="_self" aria-label="Support The Everglades National Park Institute">Support The Everglades National Park Institute</a></li>
+                            <li><a href="/donate" role="link" target="_self" aria-label="Donate">Donate</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav__col">
+                        <div class="title title-limestone footer-nav__heading"><h3>Discover Everglades National Park Institute</h3></div>
+                        <ul class="footer-nav__list">
+                            <li><a href="/about-us/fnpa" role="link" target="_self" aria-label="FNPA Experience Florida National Parks">FNPA Experience Florida National Parks</a></li>
+                            <li><a href="/shop" role="link" target="_self" aria-label="Visit the Store">Visit the Store</a></li>
+                            <li><a href="/about-us/careers" role="link" target="_self" aria-label="Careers">Careers</a></li>
+                            <li><a href="/about-us/news-blogs" role="link" target="_self" aria-label="News and Blogs">News/Blogs</a></li>
+                            <li><a href="/plan-your-visit/faq" role="link" target="_self" aria-label="FAQ">FAQ</a></li>
+                            <li><a href="/plan-your-visit/transportation" role="link" target="_self" aria-label="Transportation">Transportation</a></li>
+                            <li><a href="/contact" role="link" target="_self" aria-label="Contact Us">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav__col footer-nav__col--logos">
+                        <div class="footer-nav__logos">
+                            <img
+                                src="/assets/images/footer/logo-fnpa-experience.webp"
+                                width="213"
+                                height="74"
+                                alt="Experience Florida National Parks logo"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <span class="footer-nav__divider"></span>
+                            <img
+                                src="/assets/images/logo.webp"
+                                width="233"
+                                height="80"
+                                alt="Biscayne National Park Institute logo"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="footer-nav__partner">
+                            <img
+                                src="/assets/images/footer/nps-badge.webp"
+                                width="108"
+                                height="140"
+                                alt="National Park Service partner badge"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="title title-limestone footer-nav__heading"><h3>Proud Partner of NPS</h3></div>
+                        </div>
+                    </div>
+
+                    <div class="footer-nav__col footer-nav__col--contact">
+                        <div class="footer-nav__contact">
+                            <div class="title title-limestone footer-nav__heading"><h3>Contact</h3></div>
+                            <a href="tel:+17864654058" role="link" target="_self" aria-label="Call (786) 465-4058" class="footer-nav__contact-row">
+                                <img src="/assets/icons/icon-phone-small.svg" width="18" height="18" alt="" loading="lazy" decoding="async" />
+                                (786) 465-4058
+                            </a>
+                            <a href="mailto:info@evernpi.org" role="link" target="_self" aria-label="Email info@evernpi.org" class="footer-nav__contact-row">
+                                <img src="/assets/icons/icon-email.svg" width="20" height="20" alt="" loading="lazy" decoding="async" />
+                                info@evernpi.org
+                            </a>
+                        </div>
+                        <div class="footer-nav__follow">
+                            <p class="footer-nav__follow-label">Follow Us:</p>
+                            <div class="footer-nav__icons">
+                                <a href="https://facebook.com" role="link" target="_blank" aria-label="Follow us on Facebook" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-facebook.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                                <a href="https://instagram.com" role="link" target="_blank" aria-label="Follow us on Instagram" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-instagram.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                                <a href="https://tiktok.com" role="link" target="_blank" aria-label="Follow us on TikTok" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-tiktok.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                                <a href="https://tripadvisor.com" role="link" target="_blank" aria-label="Find us on Tripadvisor" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-tripadvisor.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                                <a href="https://youtube.com" role="link" target="_blank" aria-label="Subscribe on YouTube" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-youtube.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-nav__mobile">
+                    <div class="footer-nav__logos">
+                        <img
+                            src="/assets/images/footer/logo-fnpa-experience.webp"
+                            width="128"
+                            height="44"
+                            alt="Experience Florida National Parks logo"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <span class="footer-nav__divider"></span>
+                        <img
+                            src="/assets/images/logo.webp"
+                            width="140"
+                            height="48"
+                            alt="Biscayne National Park Institute logo"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </div>
+                    <div class="footer-nav__partner">
+                        <img
+                            src="/assets/images/footer/nps-badge.webp"
+                            width="86"
+                            height="112"
+                            alt="National Park Service partner badge"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <div class="title title-limestone footer-nav__heading"><h3>Proud Partner of NPS</h3></div>
+                    </div>
+
+                    <div class="footer-nav__acc-group">
+                        <div class="footer-nav__acc" data-acc-indep>
+                            <button type="button" class="footer-nav__acc-row" data-acc-indep-trigger aria-expanded="false">
+                                Contact
+                                <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                            </button>
+                            <div class="footer-nav__acc-panel" data-acc-indep-panel hidden>
+                                <a href="tel:+17864654058" role="link" target="_self" aria-label="Call (786) 465-4058" class="footer-nav__contact-row">
+                                    <img src="/assets/icons/icon-phone-small.svg" width="18" height="18" alt="" loading="lazy" decoding="async" />
+                                    (786) 465-4058
+                                </a>
+                                <a href="mailto:info@evernpi.org" role="link" target="_self" aria-label="Email info@evernpi.org" class="footer-nav__contact-row">
+                                    <img src="/assets/icons/icon-email.svg" width="20" height="20" alt="" loading="lazy" decoding="async" />
+                                    info@evernpi.org
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer-nav__acc" data-acc-indep>
+                            <button type="button" class="footer-nav__acc-row" data-acc-indep-trigger aria-expanded="false">
+                                Get Involved
+                                <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                            </button>
+                            <div class="footer-nav__acc-panel" data-acc-indep-panel hidden>
+                                <a href="/get-involved/our-partners" role="link" target="_self" aria-label="Our Partners">Our Partners</a>
+                                <a href="/get-involved/support" role="link" target="_self" aria-label="Support The Everglades National Park Institute">Support The Everglades National Park Institute</a>
+                                <a href="/donate" role="link" target="_self" aria-label="Donate">Donate</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-nav__acc" data-acc-indep>
+                            <button type="button" class="footer-nav__acc-row" data-acc-indep-trigger aria-expanded="false">
+                                Discover Everglades National Park Institute
+                                <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                            </button>
+                            <div class="footer-nav__acc-panel" data-acc-indep-panel hidden>
+                                <a href="/about-us/fnpa" role="link" target="_self" aria-label="FNPA Experience Florida National Parks">FNPA Experience Florida National Parks</a>
+                                <a href="/shop" role="link" target="_self" aria-label="Visit the Store">Visit the Store</a>
+                                <a href="/about-us/careers" role="link" target="_self" aria-label="Careers">Careers</a>
+                                <a href="/about-us/news-blogs" role="link" target="_self" aria-label="News and Blogs">News/Blogs</a>
+                                <a href="/plan-your-visit/faq" role="link" target="_self" aria-label="FAQ">FAQ</a>
+                                <a href="/plan-your-visit/transportation" role="link" target="_self" aria-label="Transportation">Transportation</a>
+                                <a href="/contact" role="link" target="_self" aria-label="Contact Us">Contact Us</a>
+                            </div>
+                        </div>
+
+                        <div class="h-25 w-full" aria-hidden="true"></div>
+
+                        <div class="footer-nav__follow">
+                            <p class="footer-nav__follow-label">Follow Us:</p>
+                            <div class="footer-nav__icons">
+                                <a href="https://facebook.com" role="link" target="_blank" aria-label="Follow us on Facebook" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-facebook.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                                <a href="https://instagram.com" role="link" target="_blank" aria-label="Follow us on Instagram" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-instagram.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                                <a href="https://tiktok.com" role="link" target="_blank" aria-label="Follow us on TikTok" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-tiktok.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                                <a href="https://tripadvisor.com" role="link" target="_blank" aria-label="Find us on Tripadvisor" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-tripadvisor.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                                <a href="https://youtube.com" role="link" target="_blank" aria-label="Subscribe on YouTube" class="footer-nav__icon">
+                                    <img src="/assets/images/footer/social-youtube.webp" width="40" height="40" alt="" loading="lazy" decoding="async" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid footer-nav__policy">
+                    <div class="footer-nav__rule"></div>
+                    <div class="footer-nav__policy-links">
+                        <a href="/terms-conditions" role="link" target="_self" aria-label="Terms and Conditions">Terms &amp; Conditions</a>
+                        <a href="/plan-your-visit/cancellation-policy" role="link" target="_self" aria-label="Cancellation Policy">Cancellation Policy</a>
+                        <a href="/plan-your-visit/weather-policy" role="link" target="_self" aria-label="Weather Policy">Weather Policy</a>
+                        <a href="/privacy-policy" role="link" target="_self" aria-label="Privacy Policy">Privacy Policy</a>
+                        <a href="/cookies-policy" role="link" target="_self" aria-label="Cookies Policy">Cookies Policy</a>
+                        <a href="/plan-your-visit/accessibility" role="link" target="_self" aria-label="Accessibility Statement">Accessibility Statement</a>
+                        <span>501 (c)(3) Tax Exempt ID #</span>
+                    </div>
+                    <p class="footer-nav__copyright">© 2026 Everglades National Park Institute</p>
+                </div>
+            </section>
+        </footer>
+    </main>
+</body>
+<script defer src="../dist/vendor/swiper-bundle.min.js"></script>
+<script type="module" src="../assets/js/app.js"></script>
+</html>
