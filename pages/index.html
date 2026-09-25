@@ -1721,6 +1721,136 @@
             </div>
         </section>
 
+        <section
+            class="park-map-section"
+            aria-label="Map of Everglades National Park locations"
+        >
+            <div class="park-map__stage" id="parkMapStage">
+                <div class="park-map__canvas">
+                    <img
+                        src="/assets/images/map-bg-img.webp"
+                        width="4096"
+                        height="2048"
+                        alt=""
+                        aria-hidden="true"
+                        loading="eager"
+                        decoding="async"
+                        class="park-map__lines-img"
+                    />
+                    <img
+                        src="/assets/images/map%20for%20parks.png"
+                        width="1153"
+                        height="908"
+                        alt="Illustrated map of Everglades National Park and South Florida"
+                        loading="eager"
+                        decoding="async"
+                        class="park-map__map-img"
+                    />
+                </div>
+                <div class="park-map__labels" id="parkMapLabels"></div>
+            </div>
+        </section>
+
+        <!--
+            PARK MAP DATA — populated by ACF repeater in WordPress.
+            PHP equivalent:
+              <script id="park-map-data" type="application/json">
+                <?php echo json_encode(['locations' => array_map(fn($r) => [
+                  'name'      => $r['name'],
+                  'left'      => $r['left'],
+                  'top'       => $r['top'],
+                  'variant'   => $r['variant'],
+                  'side'      => $r['side'],
+                  'icon'      => $r['icon'] ?? null,
+                  'textColor' => $r['text_color'] ?? null,
+                  'popup'     => $r['popup_text'] ? [
+                    'text' => $r['popup_text'],
+                    'link' => $r['popup_link_url'] ? ['label' => $r['popup_link_label'] ?: 'More Info', 'href' => $r['popup_link_url']] : null
+                  ] : null,
+                ], get_field('map_locations') ?? [])]); ?>
+              </script>
+        -->
+        <script id="park-map-data" type="application/json">
+        {
+          "locations": [
+            {
+              "name": "Shark Valley Visitor Center",
+              "left": "51.46%", "top": "18.06%",
+              "variant": "midnight", "side": "right", "icon": "location-pin",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Ernest F. Coe Visitor Center",
+              "left": "58.73%", "top": "47.80%",
+              "variant": "midnight", "side": "right", "icon": "location-pin",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Nine Mile Pond",
+              "left": "49.87%", "top": "62.89%",
+              "variant": "midnight", "side": "right", "icon": "location-pin",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Flamingo",
+              "left": "42.00%", "top": "72.58%",
+              "variant": "midnight", "side": "right", "icon": "location-pin",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Miami Int'l Airport",
+              "left": "74.01%", "top": "9.69%",
+              "variant": "midgreen", "side": "right", "icon": "plane",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Royal Palm Visitor Center",
+              "left": "56.94%", "top": "53.08%",
+              "variant": "coral", "side": "right",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Shark Valley Tower",
+              "left": "51.46%", "top": "24.45%",
+              "variant": "coral", "side": "right",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Marjory Stoneman\nDouglas Visitor Center",
+              "left": "22.82%", "top": "10.02%",
+              "variant": "coral", "side": "right",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Cape Sable",
+              "left": "25.07%", "top": "74.12%",
+              "variant": "coral", "side": "left",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Pa-hay-okee Overlook",
+              "left": "33.27%", "top": "44.38%",
+              "variant": "coral", "side": "left",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            {
+              "name": "Nike Missile Site",
+              "left": "37.83%", "top": "51.00%",
+              "variant": "coral", "side": "left",
+              "popup": { "text": "Lorem ipsum dolor sit amet consectetur. Euismod convallis lectus sit elementum at venenatis.", "link": { "label": "More Info", "href": "#" } }
+            },
+            { "name": "Everglades City",  "left": "14.68%", "top": "5.40%",  "variant": "plain", "side": "right" },
+            { "name": "Homestead",        "left": "59.66%", "top": "39.87%", "variant": "plain", "side": "right" },
+            { "name": "Tamiami Trail",    "left": "53.70%", "top": "13.22%", "variant": "plain", "side": "right" },
+            { "name": "Florida Bay",      "left": "42.46%", "top": "88.33%", "variant": "plain", "side": "right" },
+            { "name": "Miami",            "left": "76.26%", "top": "5.84%",  "variant": "plain", "side": "right" },
+            { "name": "Big Cypress\nNational Preserve", "left": "44.11%", "top": "3.74%",  "variant": "park", "side": "center", "textColor": "midnight", "textStroke": "limestone" },
+            { "name": "Everglades\nNational Park",      "left": "46.49%", "top": "36.01%", "variant": "park", "side": "center", "textColor": "midnight" },
+            { "name": "Biscayne\nNational\nPark",          "left": "77.88%", "top": "34.58%", "variant": "park", "side": "center", "textColor": "limestone" }
+          ]
+        }
+        </script>
+
         <footer>
             <section class="footer-instagram bg-limestone-light pt-50 pb-50 max-1199:pt-40 max-1199:pb-40">
                 <div class="container-fluid footer-instagram__inner">

@@ -572,3 +572,296 @@
 }
 
 
+/* ===== PARK MAP SECTION ===== */
+
+/* Section fills full viewport width — gradient is the background */
+.park-map-section {
+  @apply relative;
+  background: linear-gradient(180deg, #60A3BE 0%, #003044 100%);
+}
+
+/* Stage matches the Figma 1512 × 908 frame exactly.
+   container-type enables cqw units calibrated to the stage width. */
+.park-map__stage {
+  @apply relative w-full;
+  aspect-ratio: 1512 / 908;
+  container-type: inline-size;
+}
+
+/* Canvas clips the map images that extend outside the 1512 × 908 frame */
+.park-map__canvas {
+  @apply absolute inset-0 overflow-hidden;
+  z-index: 1;
+}
+
+/* Background lines texture — fills full stage at 10% opacity (Figma: opacity-10) */
+.park-map__lines-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+}
+
+/* Base map — file is 1153×908, the already-cropped visible portion.
+   Figma places the map at x=110 within a 1512px frame; no y-offset needed. */
+.park-map__map-img {
+  position: absolute;
+  left: 7.275%;    /* 110 / 1512 */
+  top: 0;
+  width: 76.28%;   /* 1153 / 1512 */
+  height: auto;
+}
+
+/* Parks coverage overlay — file is 868×824px.
+   In the 1512px frame: left=200px, top=86px. Width scaled to match map ratio. */
+
+/* Labels layer — no overflow clip so popups can overflow stage edges */
+.park-map__labels {
+  @apply absolute inset-0;
+  z-index: 2;
+}
+
+/* ---- location chip ---- */
+/* All chips: left/top = Figma bounding-box top-left (no centering transform).
+   side="center" chips use translateX(-50%) since Figma centers them on the coordinate. */
+.map-loc {
+  position: absolute;
+  left: var(--left);
+  top: var(--top);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.map-loc[data-side="right"]  { transform: none; }
+.map-loc[data-side="left"]   { transform: none; }
+.map-loc[data-side="center"] { transform: translateX(-50%); }
+
+.map-loc__trigger {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.map-loc[data-variant="plain"] .map-loc__trigger,
+.map-loc[data-variant="park"]  .map-loc__trigger {
+  cursor: default;
+}
+
+.map-loc__trigger:focus-visible {
+  outline: 2px solid var(--color-coral);
+  outline-offset: 3px;
+  border-radius: 0.6614cqw;
+}
+
+/* Chip pill — all cqw values calibrated at 1512px canvas width */
+.map-loc__chip {
+  display: flex;
+  align-items: center;
+  gap: 0.6614cqw;         /* 10px */
+  padding: 0.5291cqw 1.0582cqw;  /* 8px 16px */
+  border-radius: 0.6614cqw;      /* 10px */
+  background: var(--chip-bg);
+  color: var(--chip-fg);
+  font-family: var(--font-body);
+  font-weight: 700;
+  @apply text-20 max-1199:text-16;
+  line-height: 1.2;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* Location / plane icon inside chip */
+.map-loc__icon {
+  flex: 0 0 auto;
+  width: 1.8519cqw;   /* 28px */
+  height: 1.8519cqw;
+  display: block;
+  object-fit: contain;
+}
+
+/* Image label — replaces text when loc.image is set (e.g. Florida Bay SVG/PNG) */
+.map-loc__img {
+  display: block;
+  max-width: 9.6561cqw; /* 146px at 1512px canvas */
+  height: auto;
+  object-fit: contain;
+}
+
+.map-loc[data-variant="midnight"] .map-loc__trigger:hover .map-loc__chip,
+.map-loc[data-variant="coral"]    .map-loc__trigger:hover .map-loc__chip,
+.map-loc[data-variant="midgreen"] .map-loc__trigger:hover .map-loc__chip,
+.map-loc.is-open .map-loc__chip {
+  transform: translateY(-0.1323cqw);
+  box-shadow: 0 0.5cqw 1.2cqw rgba(0, 0, 0, 0.25);
+}
+
+/* Tail triangle — points toward the map anchor.
+   side="right": [tail ◀][chip] — tail points left (border-right)
+   side="left":  [chip][tail ▶] — tail points right (border-left) */
+.map-loc__tail {
+  flex: 0 0 auto;
+  width: 0;
+  height: 0;
+  border-top:    0.5622cqw solid transparent;  /* half of 17px polygon height */
+  border-bottom: 0.5622cqw solid transparent;
+}
+
+.map-loc[data-side="right"] .map-loc__tail { border-right: 0.9921cqw solid var(--chip-bg); }
+.map-loc[data-side="left"]  .map-loc__tail { border-left:  0.9921cqw solid var(--chip-bg); }
+
+/* ---- chip colour variants ---- */
+.map-loc[data-variant="midnight"] { --chip-bg: var(--color-midnight); --chip-fg: var(--color-white); }
+.map-loc[data-variant="coral"]    { --chip-bg: var(--color-coral);    --chip-fg: var(--color-midnight); }
+.map-loc[data-variant="midgreen"] { --chip-bg: var(--color-midgreen); --chip-fg: var(--color-white); }
+
+/* Plain place-name labels — midgreen text, no background, 24px */
+.map-loc[data-variant="plain"] .map-loc__chip {
+  background: none;
+  padding: 0;
+  @apply text-midgreen;
+  @apply text-24 max-1199:text-20;
+  font-weight: 700;
+  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-color: var(--color-light-limestone);
+  paint-order: stroke fill;
+}
+
+/* Park / area name labels — centered, 20px, colour via data-textcolor */
+.map-loc[data-variant="park"] .map-loc__chip {
+  background: none;
+  padding: 0;
+  @apply text-midnight;
+  @apply text-20 max-1199:text-16;
+  font-weight: 700;
+  text-align: center;
+  white-space: normal;
+  display: block;
+}
+
+.map-loc[data-textcolor="limestone"] .map-loc__chip { @apply text-light-limestone; }
+
+/* Per-label text stroke — set via textStroke field in JSON data */
+.map-loc[data-textstroke="limestone"] .map-loc__chip {
+  -webkit-text-stroke-width: 6px;
+  -webkit-text-stroke-color: var(--color-light-limestone);
+  paint-order: stroke fill;
+}
+
+/* ---- popup card ---- */
+.map-loc__popup {
+  position: absolute;
+  bottom: calc(100% + 0.7937cqw);
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%) translateY(0.4cqw);
+  width: 18.0556cqw;
+  min-width: 200px;
+  padding: 1.3228cqw;
+  border-radius: 0.9921cqw;
+  background: var(--color-limestone-light);
+  color: var(--color-midnight);
+  box-shadow: 0 0.8cqw 2cqw rgba(0, 16, 24, 0.28);
+  text-align: left;
+  white-space: normal;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  z-index: 5;
+}
+
+.map-loc.is-open .map-loc__popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Flip popup below when chip is near stage top */
+.map-loc.popup-below .map-loc__popup {
+  bottom: auto;
+  top: calc(100% + 0.7937cqw);
+  transform: translateX(-50%) translateY(-0.4cqw);
+}
+
+.map-loc.popup-below.is-open .map-loc__popup { transform: translateX(-50%) translateY(0); }
+
+.map-loc.is-open { z-index: 20; }
+
+.map-loc__popup-title {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.3228cqw;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-midnight);
+}
+
+.map-loc__popup-text {
+  margin: 1.0582cqw 0 0;
+  font-family: var(--font-body);
+  font-size: 1.0582cqw;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-midnight);
+}
+
+.map-loc__popup-link {
+  display: inline-block;
+  margin-top: 1.0582cqw;
+  font-family: var(--font-body);
+  font-size: 1.0582cqw;
+  font-weight: 700;
+  color: var(--color-midgreen);
+  text-decoration: none;
+}
+
+.map-loc__popup-link:hover,
+.map-loc__popup-link:focus-visible { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .park-map__stage { @apply overflow-hidden; }
+
+  /* cqw ≈ 4px at mobile = below browser min-font — override with fixed px.
+     Raw px kept here because cqw units have no Tailwind utility equivalent. */
+  .map-loc__chip {
+    line-height: 1.2;
+    @apply py-2 px-5 gap-3;
+    border-radius: 3px;
+  }
+  .map-loc__icon { width: 10px; height: 10px; }
+  .map-loc__tail {
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+  }
+  .map-loc[data-side="right"] .map-loc__tail { border-right-width: 6px; }
+  .map-loc[data-side="left"]  .map-loc__tail { border-left-width:  6px; }
+
+  .map-loc__img { max-width: 55px; }
+
+  /* Popup: override cqw width + reset min-width for mobile */
+  .map-loc__popup { width: 40cqw; @apply min-w-0 p-8 text-12; }
+}
+
+@media (max-width: 640px) {
+  .map-loc__chip,
+  .map-loc[data-variant="plain"] .map-loc__chip,
+  .map-loc[data-variant="park"]  .map-loc__chip { font-size: 1.5873cqw; }
+
+  /* Reduce text stroke on small screens — full 8px adds too much visual width */
+  .map-loc[data-variant="plain"] .map-loc__chip { -webkit-text-stroke-width: 2px; }
+  .map-loc[data-textstroke="limestone"] .map-loc__chip { -webkit-text-stroke-width: 1px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-loc__chip,
+  .map-loc__popup { transition: none; }
+}
+
